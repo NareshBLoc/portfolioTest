@@ -1,20 +1,38 @@
 <htm>
+
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Login Page
+            Login Form
         </title>
         <script src="/portfolioTest/logintest.js" ></script>
         <link rel="stylesheet" href="/portfolioTest/login.css"></link>
+        <!--<script src="/login.js"></script>
+        <link rel="stylesheet" href="/login.css">-->
+        </link>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     </head>
+
     <body>
         <div id="container">
-        <form onsubmit="check()">
-                <label><b> Name</b></label><br>
-                <input name="name" id="name" type="text" required/><br>
-                <label><b> Password </b></label><br>
-                <input id="pwd" type="password" required/><br>
-                <button onclick="check()" >Submit</button>
-        </form>
+            <form onsubmit="check()" class="formTag">
+                <div class="formElements">
+                    <div class="inputElements">
+                        <label class="labelName"><b> Name</b></label><br>
+                        <input name="name" id="name" type="text" required /><br>
+                    </div>
+                    <div class="inputElements">
+                        <label class="labelName"><b> Password </b></label><br>
+                        <input id="pwd" type="password" required /><br>
+                    </div>
+                    <div class="inputElements">
+                        <button onclick="check()">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </body>
 </htm>
